@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: rgba(0, 0, 0, 0.8)url(images/background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid blue;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+.nav-logo{
+    flex-basis: 30%;
+}
+.logo{
+    max-width: 100px;
+    padding: 5px;
+
+}
+
+.nav-section li{
+    flex-basis: 50%;
+    display: inline-block;
+    margin: 0 40px;    
+}
+.nav-section li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.nav-section li a:hover{
+    text-decoration: wavy;
+    font-size: 27px;
+    color: orange;
+}
+.nav-section li a:active{
+    color: orangered;
+}
+@media (max-width:500px) {
+    .logo{
+        max-width: 50px;
+        padding: 5px;
+    
+    }
+    
+    .nav-section li{
+        flex-basis: 50%;
+        display: inline-block;
+        margin: 10px 3px;    
+    }
+    .nav-section li a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+    .nav-section li a:hover{
+        text-decoration: wavy;
+        font-size: 15px;
+        color: orange;
+    }
+}
+/* ..............end of nav bae........  */
+#home-sec {
+	width: 100%;
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+    height: 80vh;
+    margin-bottom: 20px;
+}
+.home-text{
+    flex-basis: 45%;
+    text-align: center;
+     height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-text span{
+    
+    font-size: 41px;
+    color: yellowgreen;
+    letter-spacing: 2px;
+}
+.home-text p{
+    font-size: 40px;
+
+}
+.hero{
+    font-size: 20px;
+    padding: 10px;
+    color: yellowgreen;
+    background: transparent;
+    border: 1px solid blueviolet;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    cursor: pointer;
+
+}
+.home-pic{
+    width: 45%;
+
+}
+.mypic{
+    width: 500px;
+    /* border-radius: 25px; */
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    box-shadow: 5px 10px rgba(74, 146, 255, 0.8);
+}
+@media (max-width:500px) {
+    #home-sec {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        margin-bottom: 10px;
+    }
+    .home-text span{
+        font-size: 25px;
+        color: yellowgreen;
+        letter-spacing: 1px;
+    
+    }
+    .home-text p{
+        font-size: 25px;
+    
+    }
+    
+    .home-pic{
+        width: 45%;
+    
+    }
+    .mypic {
+        width: 143px;
+        border-radius: 25px;
+        /* border-bottom-left-radius: 50px; */
+        /* border-top-right-radius: 50px; */
+        box-shadow: -4px 5px rgba(74, 146, 255, 0.8);
+    }
+    .hero{
+        font-size: 12px;
+        padding: 15px;
+        color: yellowgreen;
+        background: transparent;
+        border: 1px solid blueviolet;
+        border-bottom-left-radius: 50%;
+        border-top-right-radius: 50%;
+        cursor: pointer;
+    
+    }
+}
+/* ..................end of home section............  */
+/* ..................skills ............  */
+h1{
+    text-align: center;
+    color: yellow;
+}
+#skill-container {
+    padding: 20px;
+}
+#skill-container h3{
+    color: yellow;
+    
+}
+#skill-container div{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.bar{
+    width: 50%;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.bar div span{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.html{
+    width: 90%;
+    background-color: yellow;
+    height: 10px;
+    animation: html 5s linear forwards;
+}
+.css{
+    width: 85%;
+    background-color: magenta;
+    height: 10px;
+    animation: css 5s linear forwards;
+}
+.js{
+    width: 60%;
+    background-color: mediumslateblue;
+    height: 10px;
+    animation: js 5s linear forwards;
+}
+.python{
+    width: 50%;
+    background-color: olivedrab;
+    height: 10px;
+    animation: py 5s linear forwards;
+}
+.html span{
+   
+    border: 1px solid yellow;
+   
+}
+.css span{
+
+    border: 1px solid magenta;}
+
+.js span{
+  
+    border: 1px solid mediumslateblue;
+
+}
+.python span{
+
+    border: 1px solid olivedrab;
+
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+    
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
+@keyframes py {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+    
+}
+@media (max-width:600px) {
+    .bar div span{
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        border-radius: 50%;
+        float: right;
+        margin-top: -5px;
+        margin-right: -20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    
+    }
+    
+}
+
+/* ..................end of skill sction.............   */
+
+
+#my-work{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.p-card{
+    margin-bottom: 5%;
+    border: 1px solid yellowgreen;
+    flex-basis: 30%;
+    background-color: blue;
+    box-shadow: 5px 10px rgba(74, 146, 255, 0.8);
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.card-pic:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.card-pic{
+    width: 98%;
+    height: 100%;
+
+}
+.p-card h6{
+    font-size: 18px;
+}
+.p-card p{
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+@media (max-width:700px) {
+    #my-work{
+        margin-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .p-card{
+        margin-bottom: 20px;
+        box-shadow: -5px 5px skyblue;
+    }
+    
+}
+
+/* ..............end of project section..............  */
+
+/* ...............start of contact section */
+#contact-section{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fa-facebook{
+    color: white;
+    font-size: 30px;
+    margin: 20px 20px;
+    
+}
+.fa-envelope-circle-check{
+    color: white;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+
+.fa-square-phone-flip{
+    color: white;
+    font-size: 30px;
+    margin: 20px 20px;
+}
+.footer{
+    height: 50px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-copyright{
+    color: white;
+    font-size: 15px;
+    margin: 020px;
+}
